@@ -1,0 +1,9 @@
+# Ignore everything by default — this repo only carries mock files
+# for the n8n version-update workflow testbed.
+/*
+
+# Allow the mock fixtures and meta files
+!/.gitignore
+!/README.md
+!/mock/
+!/mock/**

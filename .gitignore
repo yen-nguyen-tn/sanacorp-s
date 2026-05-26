@@ -1,9 +1,17 @@
-# Ignore everything by default — this repo only carries mock files
-# for the n8n version-update workflow testbed.
+# Ignore everything by default — this repo only carries mock fixtures
+# at the same paths used by the real Sanacorp-S Connect codebase.
 /*
 
-# Allow the mock fixtures and meta files
+# Allow meta files
 !/.gitignore
 !/README.md
-!/mock/
-!/mock/**
+
+# Allow root package.json (semver lives here)
+!/package.json
+
+# Allow app/src/version.json only, ignore the rest of app/
+!/app/
+/app/*
+!/app/src/
+/app/src/*
+!/app/src/version.json
